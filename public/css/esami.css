@@ -22,7 +22,7 @@
     padding:20px;
     text-align: center;
 }
-.pren li{
+.pren_err li{
     color: #ff0000;
     font-weight: bold;
 }
