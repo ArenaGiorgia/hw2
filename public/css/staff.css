@@ -1,0 +1,125 @@
+
+.sbarra{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.9;
+    margin-top: 450px;
+}
+
+.sbarra h1
+{
+    font-family: 'Julius Sans One', sans-serif;
+    text-transform: capitalize;
+    color:white;
+    font-size: 40px;
+    font-style: normal;
+    border-bottom: none;
+    margin: 0px;
+}
+.sbarra img
+{
+    height: 48px;
+    width: 48px;
+}
+
+
+.bottoni{
+
+    cursor: pointer;
+    margin-top: 3%;
+    margin-left: 1%;
+    text-transform: uppercase;
+    border-radius: 10px;
+    outline: none;
+    padding: 5px 15px;
+    border: 2px solid rgba(0, 0, 0, 0.329);
+}
+
+
+
+#main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:30px;
+}
+
+section {
+    font-family: 'Comfortaa', 'Times New Roman', cursive;
+
+}
+
+#main div{
+
+    text-transform: uppercase;
+    color:black;
+    border-radius: 10px;
+    text-decoration:none;
+    display: flex;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: ease-out 400ms;
+    position: relative;
+    padding:10px;
+    margin:20px;
+    width: 25%;
+}
+#main p{
+    font-weight: bold;
+
+}
+#main div:hover{
+    box-shadow:0 10px 20px 0 rgba(0, 0, 0, 0.30);
+    opacity: 0.8;
+}
+.immagini_principali {
+    width: 40%;
+    border-radius: 100%;
+    opacity: 0.9;
+}
+.sed{
+    color: rgba(0, 139, 139, 0.94);
+    padding: 10px;
+}
+
+footer {
+    height: 70px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 14, 0.918);
+}
+
+
+@media(max-width:500px) {
+    body {
+        font-size: 15px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    #menu,
+    header nav a {
+        display: none;
+    }
+
+    #menutendina {
+        display: block;
+    }
+
+    #main div{
+        padding:30px;
+        margin:40px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,255 @@
+
+.pren, p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.pren_err{
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    text-decoration: none;
+    padding:20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.pren_err a{
+    color:rgba(0, 139, 139, 0.94);
+}
+.pren h3{
+    padding:20px;
+    text-align: center;
+}
+.pren li{
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/*
+#sbarra {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.9;
+    margin-top: 450px;
+}
+*/
+.sbarra{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.9;
+    margin-top: 450px;
+}
+.sbarra h1
+{
+    font-family: 'Julius Sans One', sans-serif;
+    text-transform: capitalize;
+    color:white;
+    font-size: 40px;
+    font-style: normal;
+    border-bottom: none;
+    margin: 0px;
+}
+.sbarra img
+{
+    height: 48px;
+    width: 48px;
+}
+
+#ric {
+    margin: 5%;
+    border-radius: 14px;
+    outline: none;
+    padding: 5px 15px;
+    border: 2px solid rgba(0, 0, 0, 0.329);
+}
+
+#main,
+#preferiti {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 30px 0px 30px;
+}
+
+section {
+    font-family: 'Comfortaa', 'Times New Roman', cursive;
+    text-transform: uppercase;
+}
+
+#main div,
+#preferiti div {
+    display: flex;
+    position: relative;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 25%;
+    margin: 10px;
+}
+
+#main > div:hover,
+#preferiti > div:hover {
+
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.30);
+    opacity: 0.9;
+    transition: ease-out 500ms;
+}
+
+section h1 {
+    color: white;
+    background-color: black;
+    font-size: 30px;
+    padding: 10px;
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+}
+
+.immagini_principali {
+    width: 350px;
+    height: 200px;
+}
+
+#main div h6,
+#preferiti div h6, #prenota, button {
+    background-color: rgba(0, 139, 139, 0.94);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+p {
+    text-transform: none;
+    padding: 10px;
+}
+
+button {
+    margin: 5px;
+    border: none;
+}
+
+#main div h6:hover,
+#preferiti div h6:hover, #prenota:hover, button:hover {
+    background-color: white;
+    cursor: pointer;
+    border: 2px solid rgba(0, 139, 139, 0.94);
+    color: rgba(0, 139, 139, 0.94);
+}
+
+#main div h4,
+#preferiti h4,
+h4 {
+    padding: 30px 40px 30px 40px;
+    margin: 20px 15%;
+    font-size: 16px;
+    color: rgba(0, 139, 139, 0.94);
+    text-align: center;
+}
+
+section .icona {
+    cursor: pointer;
+    position: absolute;
+    top: 43px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/*stile tabella*/
+table {
+    margin-top:80px;
+    margin-bottom: 80px;
+    align-items: center;
+    border-collapse: separate;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2
+}
+
+th {
+    background-color: rgba(0, 139, 139, 0.94);
+    color: white;
+    font-weight: bold;
+}
+
+@media(max-width:500px) {
+    body {
+        font-size: 15px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    #menu,
+    header nav a {
+        display: none;
+    }
+  header h1{
+      text-align: center;
+      z-index: 1;
+      text-decoration: none;
+      color: white;
+      margin: 0px;
+      font-family: 'Julius Sans One', sans-serif;
+      font-weight: bold;
+      font-style: normal;
+      font-size: 30px;
+  }
+    #menutendina {
+        display: block;
+    }
+    .pren{
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #main,#preferiti{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+    #main div,
+    #preferiti div {
+        display: flex;
+        position: relative;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin: 10px;
+    }
+}

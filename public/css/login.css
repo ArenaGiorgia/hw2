@@ -1,0 +1,111 @@
+body {
+    margin: 0px;
+    background-image: url("../img/pexels-chokniti-khongchum-2280547.jpg");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+section #icona {
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0px 0px 0px 5px;
+}
+
+input {
+    margin: 0.5em;
+}
+.error
+{
+    background-color: rgba(252, 0, 0, 0.39);
+}
+
+.genere{
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+}
+.genere span{
+    color:red;
+    font-weight:bold;
+}
+form input[type="submit"] {
+    background-color: black;
+    color: white;
+    font-family: 'Julius Sans One', sans-serif;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section div>img {
+    height: 50px;
+    width: 50px;
+}
+
+section div>a {
+    color: #0b3f52;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+form {
+    display: flex;
+    padding: 0.5em;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 25vh;
+    width: 30%;
+    left: 30vw;
+    padding: 40px;
+    border-radius: 10px;
+}
+li{
+    font-family: Arial;
+    color: #720000;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+@media(max-width:500px){
+   section{
+       display: flex;
+       flex-direction: column;
+       width: 50%;
+       top:15vh;
+       left:18vw;
+       padding: 30px;
+   }
+    h1{
+        font-size: 30px;
+    }
+ #menutendina{
+     display: none !important;
+ }
+#menu{
+    display: none!important;
+}
+.button{
+padding: 10px !important;
+}
+}
