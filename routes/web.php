@@ -21,7 +21,7 @@ use App\Models\Esito;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return redirect('home');
 });
 //QUESTE SONO LE ROUTE DELLA HOME
 Route::get('/home', "HomeController@index")->name("home");
