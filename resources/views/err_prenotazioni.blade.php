@@ -14,7 +14,7 @@
                 <div class="pren">
                     <img src="{{asset('img/outline_warning_black_24dp.png')}}"><h3>Attenzione!!! Non puoi prenotare un esame prima che non siano passati 30 giorni dal precedente esame della stessa tipologia!</h3><img src="{{asset('img/outline_warning_black_24dp.png')}}">
                 </div>
-                <div class="pren">
+                <div class="pren_err">
 
                     @foreach($errori as $errore)
                         <li>
